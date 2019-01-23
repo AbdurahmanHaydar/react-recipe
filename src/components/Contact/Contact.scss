@@ -1,0 +1,49 @@
+$color_1: #c9b650;
+$color_2: white;
+$font_family_1: 'Rakkas', cursive;
+$background_color_1: #708090;
+
+@import url("https://fonts.googleapis.com/css?family=Rakkas|Roboto:700");
+.contactPage {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	display: inline-block;
+	width: 60%;
+	float: center;
+	text-align: center;
+	margin: auto;
+	display: flex;
+}
+.galtext {
+	text-align: center;
+	font-family: $font_family_1;
+	color: $color_1;
+}
+.addbutton {
+	margin-left: auto;
+}
+.contactForm {
+	width: 100%;
+	border-radius: 5px;
+	padding: 20px;
+}
+.cformField {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.sendButton {
+	width: 50%;
+	background-color: $background_color_1;
+	color: $color_2;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 3em;
+}

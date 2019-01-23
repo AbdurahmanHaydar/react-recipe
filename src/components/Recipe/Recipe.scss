@@ -1,0 +1,146 @@
+$color_1: #c9b650;
+$color_2: #063001;
+$color_3: white;
+$font_family_1: 'Rakkas', cursive;
+$background_color_1: #f9fbff;
+$background_color_2: #00b894;
+$background_color_3: #edffea;
+
+@import url("https://fonts.googleapis.com/css?family=Rakkas|Roboto:700");
+.recipe {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: 1%;
+}
+.galtext {
+	text-align: center;
+	font-family: $font_family_1;
+	color: $color_1;
+}
+.addrecipe {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 300px;
+}
+.searchrecipe {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	overflow: hidden;
+	height: 1%;
+}
+.searchlist {
+	float: left;
+	width: 70%;
+	border-radius: 4px;
+	padding: 14px 20px;
+	margin-right: 8px;
+	margin-bottom: 1em;
+	display: block;
+	border: 0px solid #ccc;
+	background-color: $background_color_1;
+	text-align: left;
+}
+.searchField {
+	float: left;
+	width: 50%;
+	border-radius: 4px;
+	padding: 14px 20px;
+	margin-right: 8px;
+	margin-bottom: 1em;
+}
+.sr {
+	margin-left: 20px;
+	font-family: $font_family_1;
+	color: $color_2;
+}
+.searchButton {
+	width: 20%;
+	background-color: $background_color_2;
+	color: $color_3;
+	padding: 14px 10px;
+	border: none;
+	border-radius: 1px;
+	cursor: pointer;
+}
+.searchForm {
+	width: 100%;
+	border-radius: 5px;
+	padding: 20px;
+}
+.myForm {
+	width: 100%;
+	border-radius: 5px;
+	padding: 20px;
+}
+.formField {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.doneAdded {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 0px solid #ccc;
+	background-color: $background_color_3;
+	text-align: center;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.rectext {
+	text-align: center;
+	margin-bottom: 2em;
+}
+.myButton {
+	width: 50%;
+	background-color: $background_color_2;
+	color: $color_3;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.myList {
+	list-style: none;
+}
+.myListButton {
+	display: inline-block;
+	height: auto;
+	width: auto;
+	border-radius: 7px;
+	border: 1px solid #00b894;
+	margin: 3px 5px;
+}
+@media (max-width: 768px) {
+	.searchButton {
+		display: flex;
+	}
+	.addrecipe {
+		float: left;
+		width: 100%;
+		padding: 10px;
+		height: 300px;
+		margin-left: 3em;
+	}
+	.searchrecipe {
+		float: left;
+		width: 100%;
+		padding: 10px;
+		overflow: hidden;
+		height: 1%;
+		margin-left: 2em;
+		margin-top: 8em;
+		margin-bottom: 3em;
+	}
+}

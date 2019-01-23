@@ -1,0 +1,83 @@
+$color_1: #c9b650;
+$font_family_1: 'Rakkas', cursive;
+
+@import url("https://fonts.googleapis.com/css?family=Rakkas|Roboto:700");
+div.gallery {
+	border: 0;
+	display: flex;
+	margin: auto;
+	img {
+		width: 100%;
+		height: auto;
+		margin: 0.5em;
+		position: relative;
+	}
+}
+.galtext {
+	text-align: center;
+	font-family: $font_family_1;
+	color: $color_1;
+}
+.imgtopright {
+	margin-top: 2em;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+.responsive {
+	float: left;
+	margin: auto;
+	display: block;
+	width: 49.99999%;
+	position: relative;
+	left: 35%;
+	margin-left: -100px;
+	align-items: center;
+}
+.responsiveRight {
+	float: left;
+	margin: auto;
+	display: block;
+	width: 49.99999%;
+	position: relative;
+	left: 15%;
+	margin-left: -100px;
+	align-items: center;
+}
+.clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.responsive {
+		width: 10.99999%;
+		right: auto;
+	}
+	.responsiveRight {
+		width: 3.99999%;
+		left: 58%;
+	}
+	.imgGal {
+		width: 154px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+		right: auto;
+	}
+	.responsiveRight {
+		width: 20%;
+		left: auto;
+	}
+	.imgGal {
+		width: 124px;
+	}
+}

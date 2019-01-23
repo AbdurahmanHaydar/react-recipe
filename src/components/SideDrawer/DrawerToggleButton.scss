@@ -1,0 +1,39 @@
+$color_1: white;
+
+.toggle-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 24px;
+	width: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	box-sizing: border-box;
+	float: right;
+	margin: 30px 22px 30px 20px;
+	&:focus {
+		outline: none;
+	}
+}
+.toggle-menu {
+	color: $color_1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 24px;
+	width: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	box-sizing: border-box;
+	float: left;
+	margin: 30px 22px 30px 1px;
+}
+.toggle-button__line {
+	width: 30px;
+	height: 2px;
+	background: white;
+}
